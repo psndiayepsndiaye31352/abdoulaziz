@@ -1,0 +1,19 @@
+{
+  "name": "p3_ibouroi_abdoulaziz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbouroiAbdoulaziz/P3_ibouroi_abdoulaziz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IbouroiAbdoulaziz/P3_ibouroi_abdoulaziz/issues"
+  },
+  "homepage": "https://github.com/IbouroiAbdoulaziz/P3_ibouroi_abdoulaziz#readme"
+}

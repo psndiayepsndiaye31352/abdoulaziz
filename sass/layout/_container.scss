@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-quater;
+    height: 50px;
+    box-shadow:inset 0 0 $padding-left darken($color: $color-quater, $amount:10);
+    & input{
+        margin-left: $padding-left;
+        border: none;
+        background-color: $color-quater;
+    }
+}

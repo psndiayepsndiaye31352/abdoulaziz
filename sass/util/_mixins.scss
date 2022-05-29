@@ -1,0 +1,8 @@
+@mixin main-padding-top($number) {
+    padding-top: $padding-left*$number;
+    
+}
+@mixin main-margin-top($number) {
+    margin-top: $padding-left*$number;
+    
+}

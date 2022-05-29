@@ -11,3 +11,36 @@
         background-color: $color-quater;
     }
 }
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    background-color: lighten($color: $color-quater, $amount: 3);
+    @include main-padding-top(3);
+    &__heading{
+        font-size: 1.7rem;
+        font-weight: $font-weight-heading;
+        width: 70%;
+        text-align: center;
+    }
+    &__subheading{
+        margin: 0 0 17px 0;
+        font-size: 1.25rem;
+        font-weight: $font-weight-heading*0.45;
+        text-align: center;
+        padding-top: $padding-left;
+    }
+}
+
+.button{
+    padding: $padding-left $padding-left*1.4;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient($color-secondary,$color-primary);
+    box-shadow: 4px 4px 20px darken($color: $color-quater, $amount: 40);
+    @include main-margin-top(1.5)
+}

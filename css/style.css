@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
+  padding: 0;
 }
 
 * {
@@ -14,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding: 22.5px 0 7.5px 0;
 }
 
 nav ul {
@@ -40,6 +38,39 @@ nav a {
   margin-left: 15px;
   border: none;
   background-color: #F2F2F2;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  background-color: #fafafa;
+  padding-top: 45px;
+}
+.hero__heading {
+  font-size: 1.7rem;
+  font-weight: 550;
+  width: 70%;
+  text-align: center;
+}
+.hero__subheading {
+  margin: 0 0 17px 0;
+  font-size: 1.25rem;
+  font-weight: 247.5;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.button {
+  padding: 15px 21px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 4px 4px 20px #8c8c8c;
+  margin-top: 22.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,8 @@
     flex-direction: column;
     align-items: center;
     height: 40vh;
-    background-color: lighten($color: $color-quater, $amount: 3);
+    background-color: lighten($color: $color-quater, $amount: 2);
+    // background-color: $color-quater;
     @include main-padding-top(2);
     &__heading{
         font-size: 1.7rem;
@@ -34,20 +35,12 @@
     }
 }
 
-.button{
-    padding: $padding-left $padding-left*1.4;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    color: white;
-    background: linear-gradient($color-secondary,$color-primary);
-    box-shadow: 4px 4px 20px darken($color: $color-quater, $amount: 40);
-    @include main-margin-top(1.5);
-}
+
 
 .working{
     display: flex;
     flex-direction: column;
+    padding-bottom: $padding-left*2.5;
     &__heading{
         padding-left: $padding-left;
         @include main-margin-top(2);
@@ -88,5 +81,14 @@
 
 
         
+    }
+}
+
+.restaurent{
+    @include main-padding-top(1);
+    background-color: $color-quater;
+    &__heading{
+        padding-left: $padding-left;
+        @include main-margin-top(2);
     }
 }

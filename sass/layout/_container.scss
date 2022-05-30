@@ -18,7 +18,7 @@
     align-items: center;
     height: 40vh;
     background-color: lighten($color: $color-quater, $amount: 3);
-    @include main-padding-top(3);
+    @include main-padding-top(2);
     &__heading{
         font-size: 1.7rem;
         font-weight: $font-weight-heading;
@@ -42,5 +42,51 @@
     color: white;
     background: linear-gradient($color-secondary,$color-primary);
     box-shadow: 4px 4px 20px darken($color: $color-quater, $amount: 40);
-    @include main-margin-top(1.5)
+    @include main-margin-top(1.5);
+}
+
+.working{
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        padding-left: $padding-left;
+        @include main-margin-top(2);
+    }
+    &__item{
+        position:relative;
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+        background-color: $color-quater;
+        width: 85%;
+        height: 60px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px darken($color: $color-quater, $amount: 10);
+        @include main-margin-top(1);
+        & div:first-child{
+            position: absolute;
+            top: 35%;
+            left: -6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+            border-radius: 50%;
+            background-color: $color-primary;
+        }
+        & div:nth-child(2){
+            padding-left: $padding-left*0.5;
+        }
+        &>*:not(:first-child){
+            margin-left: $padding-left*1.5;
+        }
+
+
+        
+    }
 }

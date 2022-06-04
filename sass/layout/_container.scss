@@ -86,6 +86,7 @@
 
 .restaurent{
     @include main-padding-top(1);
+    padding-bottom: $padding-left*4;
     background-color: $color-quater;
     &__heading{
         padding-left: $padding-left;

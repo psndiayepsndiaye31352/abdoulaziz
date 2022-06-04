@@ -158,11 +158,35 @@ nav a {
 
 .restaurent {
   padding-top: 20px;
+  padding-bottom: 80px;
   background-color: #F2F2F2;
 }
 .restaurent__heading {
   padding-left: 20px;
   margin-top: 40px;
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding-left: 20px;
+  height: 225px;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+footer ul {
+  list-style: none;
+  margin-bottom: 8px;
+}
+footer li + li {
+  margin-top: 8px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

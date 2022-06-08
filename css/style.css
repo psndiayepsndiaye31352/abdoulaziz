@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  position: relative;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -60,10 +64,16 @@
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px 0 10px 0;
+}
+.header i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
 }
 
 nav ul {
@@ -111,6 +121,9 @@ nav a {
   font-weight: 247.5;
   text-align: center;
   padding-top: 20px;
+}
+.hero__img {
+  width: 100%;
 }
 
 .working {
@@ -166,6 +179,84 @@ nav a {
   margin-top: 40px;
 }
 
+.course {
+  padding-top: 26px;
+}
+.course__heading::after {
+  content: "";
+  display: block;
+  margin-top: 4px;
+  width: 60px;
+  border: 1px solid #99E2D0;
+}
+.course h2 {
+  font-weight: 200;
+}
+.course p {
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.course__item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 98%;
+  margin-top: 14px;
+  padding-left: 8px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px #cccccc;
+  overflow: hidden;
+}
+.course__item h3 {
+  margin-top: 10px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.course__item div:first-child {
+  width: 80%;
+  transition: width 300ms ease-in-out;
+}
+.course__item div:nth-child(2) {
+  margin-bottom: 10px;
+  transition: transform 300ms ease-in-out;
+  transform: translateX(100%);
+}
+.course__item div:nth-child(3) {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transition: transform 300ms ease-in-out;
+  transform: translateX(102%);
+}
+.course__item div:nth-child(3) i {
+  color: white;
+  transition: transform 300ms 150ms ease-in-out;
+  transform: rotate(-180deg);
+}
+.course__item:hover > div:first-child {
+  width: 70%;
+}
+.course__item:hover > div:nth-child(2) {
+  transform: translateX(17px);
+}
+.course__item:hover > div:nth-child(3) {
+  transform: translateX(47%);
+}
+.course__item:hover > div:nth-child(3) i {
+  transform: rotate(0);
+}
+
 footer {
   background-color: #2e2e2e;
   color: white;
@@ -187,6 +278,28 @@ footer li + li {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+.menu {
+  position: relative;
+  top: -50px;
+  border-radius: 40px 40px 0 0;
+  padding: 0 20px;
+  background-color: #F2F2F2;
+  height: 100vh;
+}
+.menu__heading {
+  display: flex;
+  padding-top: 40px;
+}
+.menu__heading h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.menu__heading div {
+  margin-left: auto;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

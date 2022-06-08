@@ -1,0 +1,23 @@
+.menu{
+    position: relative;
+    top: -50px;
+    border-radius: 40px 40px 0 0;
+    padding: 0 $padding-left;
+    background-color: $color-quater;
+    height: 100vh;
+    // border: 1px solid red;
+    &__heading{
+        display: flex;
+        padding-top: $padding-left*2;
+        & h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+        & div{
+            margin-left: auto;
+            padding-right: $padding-left;
+        }
+        
+    }
+}

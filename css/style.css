@@ -6,6 +6,7 @@
 
 main {
   position: relative;
+  background-color: #F2F2F2;
 }
 
 * {
@@ -21,6 +22,10 @@ main {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 4px 4px 20px #8c8c8c;
   margin-top: 30px;
+}
+.button--pages {
+  width: 50%;
+  margin: 40px auto;
 }
 
 .card {
@@ -85,6 +90,10 @@ nav ul {
 nav a {
   text-decoration: none;
   color: black;
+}
+
+.container {
+  display: flex;
 }
 
 .form {
@@ -181,12 +190,13 @@ nav a {
 
 .course {
   padding-top: 26px;
+  margin-bottom: 20px;
 }
 .course__heading::after {
   content: "";
   display: block;
   margin-top: 4px;
-  width: 60px;
+  width: 50px;
   border: 1px solid #99E2D0;
 }
 .course h2 {
@@ -204,7 +214,7 @@ nav a {
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 98%;
+  width: 100%;
   margin-top: 14px;
   padding-left: 8px;
   background-color: white;
@@ -284,9 +294,8 @@ footer a {
   position: relative;
   top: -50px;
   border-radius: 40px 40px 0 0;
-  padding: 0 20px;
+  padding: 0 20px 20px;
   background-color: #F2F2F2;
-  height: 100vh;
 }
 .menu__heading {
   display: flex;

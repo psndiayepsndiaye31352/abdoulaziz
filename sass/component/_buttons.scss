@@ -7,6 +7,10 @@
     background: linear-gradient($color-secondary,$color-primary);
     box-shadow: 4px 4px 20px darken($color: $color-quater, $amount: 40);
     @include main-margin-top(1.5);
+    &--pages{
+        width: 50%;
+        margin: $padding-left*2 auto;
+    }
 }
 
 .card{

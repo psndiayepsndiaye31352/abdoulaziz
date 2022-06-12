@@ -141,11 +141,13 @@
         }
         & div:nth-child(2){
             margin-bottom:$padding-left*0.5 ;
+            margin-right: $padding-left*0.3;
             transition: transform   300ms ease-in-out;
             transform: translateX(100%);
         }
         & div:nth-child(3){
-            width: 15%;
+            // width: 15%;
+            flex: 2;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -164,10 +166,11 @@
             width: 70%;
         }
         &:hover>div:nth-child(2){
-            transform: translateX(17px);
+            transform: translateX(0);
         }
         &:hover>div:nth-child(3){
-            transform: translateX(47%);
+            transform: translateX(0%);
+            // flex: 1;
             & i{
                 transform: rotate(0);
             }

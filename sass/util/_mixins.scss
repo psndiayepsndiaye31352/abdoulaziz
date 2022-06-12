@@ -18,3 +18,8 @@
         @content;
     }
 }
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints,desk)){
+        @content;
+    }
+}

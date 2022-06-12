@@ -38,6 +38,10 @@
     }
     &__img{
         width: 100%;
+        @include desktop{
+            height: 40vh;
+            object-fit: cover;
+        }
     }
 }
 
@@ -98,6 +102,12 @@
         padding-left: $padding-left;
         @include main-margin-top(2);
     }
+    &__container{
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .course{
@@ -140,6 +150,7 @@
             transition: width 300ms ease-in-out;
         }
         & div:nth-child(2){
+            flex: 1;
             margin-bottom:$padding-left*0.5 ;
             margin-right: $padding-left*0.3;
             transition: transform   300ms ease-in-out;

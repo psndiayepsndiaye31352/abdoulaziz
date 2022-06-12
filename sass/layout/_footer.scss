@@ -3,15 +3,27 @@ footer{
     color: white;
     padding-left: $padding-left;
     height: 225px;
+    @include desktop{
+        display: flex;
+        justify-content: space-around;
+    }
     & h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.2rem;
         padding: $padding-left 0;
+        @include  desktop{
+            padding-top:$padding-left*3;
+        }
     }
     & div{
         @include tablette{
             display: flex;
             justify-content: space-between;
+
+        }
+        @include desktop{
+            width: 70%;
+            padding-top: $padding-left*2.5;
         }
     }
     & ul{

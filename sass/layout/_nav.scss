@@ -4,7 +4,17 @@ nav{
         list-style: none;
         width: 0;
         overflow: hidden;
+        @include desktop{
+            width: 350px;
+            padding-right: $padding-left;
+            justify-content: space-between;
+        }
+    & li+li{
+        @include desktop{
+            margin-left: $padding-left*2;
+        }
         
+    }    
     }
     & a{
         text-decoration: none;

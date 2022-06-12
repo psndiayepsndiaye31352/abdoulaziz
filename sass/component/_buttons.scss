@@ -23,6 +23,9 @@
     @include tablette{
         height: 350px;
     }
+    @include desktop{
+        max-width: 45%;
+    }
     &__img{
         width: 100%;
         height: 70%;

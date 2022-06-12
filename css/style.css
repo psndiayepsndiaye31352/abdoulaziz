@@ -9,6 +9,12 @@ main {
   background-color: #F2F2F2;
 }
 
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -39,6 +45,11 @@ main {
 @media all and (min-width: 599px) {
   .card {
     height: 350px;
+  }
+}
+@media all and (min-width: 992px) {
+  .card {
+    max-width: 45%;
   }
 }
 .card__img {
@@ -101,10 +112,21 @@ main {
   align-items: center;
   padding: 30px 0 10px 0;
 }
+@media all and (min-width: 992px) {
+  .header {
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}
 .header i {
   position: absolute;
   top: 50%;
   left: 20px;
+}
+@media all and (min-width: 992px) {
+  .header i {
+    display: none;
+  }
 }
 
 nav ul {
@@ -112,6 +134,18 @@ nav ul {
   list-style: none;
   width: 0;
   overflow: hidden;
+}
+@media all and (min-width: 992px) {
+  nav ul {
+    width: 350px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 992px) {
+  nav ul li + li {
+    margin-left: 40px;
+  }
 }
 nav a {
   text-decoration: none;
@@ -159,6 +193,12 @@ nav a {
 }
 .hero__img {
   width: 100%;
+}
+@media all and (min-width: 992px) {
+  .hero__img {
+    height: 40vh;
+    object-fit: cover;
+  }
 }
 
 .working {
@@ -213,6 +253,12 @@ nav a {
   padding-left: 20px;
   margin-top: 40px;
 }
+@media all and (min-width: 992px) {
+  .restaurent__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .course {
   padding-top: 26px;
@@ -260,6 +306,7 @@ nav a {
   transition: width 300ms ease-in-out;
 }
 .course__item div:nth-child(2) {
+  flex: 1;
   margin-bottom: 10px;
   margin-right: 6px;
   transition: transform 300ms ease-in-out;
@@ -300,15 +347,32 @@ footer {
   padding-left: 20px;
   height: 225px;
 }
+@media all and (min-width: 992px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.2rem;
   padding: 20px 0;
 }
+@media all and (min-width: 992px) {
+  footer h2 {
+    padding-top: 60px;
+  }
+}
 @media all and (min-width: 599px) {
   footer div {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media all and (min-width: 992px) {
+  footer div {
+    width: 70%;
+    padding-top: 50px;
   }
 }
 footer ul {

@@ -52,8 +52,29 @@ main {
 .card__legend div {
   padding: 10px 20px;
 }
-.card__legend div:last-child {
+.card__legend__animation {
   margin-left: auto;
+  position: relative;
+}
+.card__legend__animation i {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+}
+.card__legend__animation i:first-child {
+  color: black;
+  transition: color 150ms ease-in-out;
+}
+.card__legend__animation i:nth-child(2) {
+  color: #FF79DA;
+  transition: opacity 300ms 160ms ease-in-out;
+  opacity: 0;
+}
+.card__legend__animation:hover :first-child {
+  color: #FF79DA;
+}
+.card__legend__animation:hover :nth-child(2) {
+  opacity: 1;
 }
 .card__legend p {
   margin-top: 6px;

@@ -35,14 +35,37 @@
         & div{
             padding: $padding-left*0.5 $padding-left;
         }
-        & div:last-child{
+        &__animation{
             margin-left: auto;
+            position: relative;
+            // border: 1px solid red;
+            &  i{
+                position: absolute;
+                top: 30%;
+                right: 40%;
+            }
+            & i:first-child{
+                color: black;
+                transition: color 150ms ease-in-out;
+            }
+            & i:nth-child(2){
+                color: $color-secondary;
+                transition: opacity 300ms 160ms ease-in-out;
+                opacity: 0;
+            }
+            &:hover :first-child{
+                color: $color-secondary;
+            }
+            &:hover :nth-child(2){
+                opacity: 1;
+            }
         }
         & p{
             margin-top: $padding-left*0.3;
             font-weight: 300;
 
-        };
+        }
+
     }
 }
 

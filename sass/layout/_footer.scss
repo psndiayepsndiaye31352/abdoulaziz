@@ -8,9 +8,16 @@ footer{
         font-size: 1.2rem;
         padding: $padding-left 0;
     }
+    & div{
+        @include tablette{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     & ul{
         list-style: none;
         margin-bottom: $padding-left*0.4;
+        margin-right: $padding-left;
     }
     & li+li{
         margin-top: $padding-left*0.4;

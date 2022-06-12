@@ -12,3 +12,9 @@
     white-space:nowrap;
     text-overflow:ellipsis;
 }
+
+@mixin tablette {
+    @media all and (min-width: map-get($breakpoints,tab)){
+        @content;
+    }
+}

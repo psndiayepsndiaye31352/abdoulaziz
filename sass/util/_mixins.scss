@@ -23,3 +23,11 @@
         @content;
     }
 }
+
+@mixin translate-anim-mixin{
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+            animation: translate-anim 500ms 100ms*$i both;
+        }
+    }
+}

@@ -140,6 +140,7 @@
         border-radius: 15px;
         box-shadow: 1px 1px 4px lighten($color: black, $amount: 80);
         overflow: hidden;
+        @include translate-anim-mixin;
         & h3{
             margin-top: $padding-left*0.5;
             font-weight: 500;

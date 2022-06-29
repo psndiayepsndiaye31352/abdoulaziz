@@ -15,6 +15,9 @@
 
 .card{
     position: relative;
+    display: block;
+    color: black;
+    cursor: pointer;
     width: 90%;
     height: 250px;
     margin: $padding-left auto 0;

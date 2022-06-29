@@ -41,6 +41,11 @@
         @include desktop{
             height: 40vh;
             object-fit: cover;
+            
+        }
+        &--enchante{
+            height: 35vh;
+            object-fit: cover;
         }
     }
 }

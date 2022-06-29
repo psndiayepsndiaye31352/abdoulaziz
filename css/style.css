@@ -44,6 +44,9 @@ body {
 
 .card {
   position: relative;
+  display: block;
+  color: black;
+  cursor: pointer;
   width: 90%;
   height: 250px;
   margin: 20px auto 0;
@@ -208,6 +211,10 @@ nav a {
     object-fit: cover;
   }
 }
+.hero__img--enchante {
+  height: 35vh;
+  object-fit: cover;
+}
 
 .working {
   display: flex;
@@ -313,6 +320,9 @@ nav a {
 }
 .course__item:nth-child(4) {
   animation: translate-anim 500ms 400ms both;
+}
+.course__item:nth-child(5) {
+  animation: translate-anim 500ms 500ms both;
 }
 .course__item h3 {
   margin-top: 10px;
